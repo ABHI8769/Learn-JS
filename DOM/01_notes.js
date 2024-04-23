@@ -35,3 +35,6 @@ array.forEach(function (li){
 all list elements text color will change to orange through for each loop
 
 */
+
+
+//
