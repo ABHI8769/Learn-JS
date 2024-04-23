@@ -2,17 +2,24 @@
 
 This repository contains materials and mini-projects to help you learn and practice JavaScript concepts. Whether you're just starting out or looking to deepen your understanding, you'll find resources here to aid your learning journey.
 
+Certainly! Here's the README format with the Contents section in the specified order:
+
+---
+
+# JavaScript Learning Guide
+
+Welcome to the JavaScript Learning Guide! This repository contains materials and mini-projects to help you learn and practice JavaScript concepts. Whether you're a beginner or looking to deepen your understanding, you'll find resources here to aid your learning journey.
+
 ## Contents
 
-- [Learning JS](#learning-js)
-- [APIs](#apis)
-- [Updates](#updates)
-- [Async JS](#async-js)
-- [Call, This, Bind](#call-this-bind)
+- [JavaScript Basics](#javascript-basics)
 - [DOM Manipulation](#dom-manipulation)
 - [Events](#events)
-- [JavaScript Basics](#javascript-basics)
+- [Async JS](#async-js)
 - [Promises](#promises)
+- [APIs](#apis)
+- [Call, This, Bind](#call-this-bind)
+
 
 ### Learning JS
 This section covers the essentials of JavaScript. From variables to functions, loops to conditional statements, you'll get a solid foundation in the language.
