@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <style>
+        td {
+            border: 1px solid white;
+        }
+
+    </style>
+</head>
+<body style="background-color: black; color: rgb(255, 255, 255);">
+    <button id="button">Show me the Card</button>
+    <div id="userInfo"></div>
+</body>
+<script>
+    function hit(){
+
+        const requestURL = 'https://api.github.com/users/ABHI8769'
+        const xhr = new XMLHttpRequest;
+        xhr.open('GET',requestURL)
+
+        xhr.onreadystatechange = function(){
+            
+            if (xhr.readyState === 4) {
+            const data = JSON.parse(xhr.responseText);
+            const userInfo = document.getElementById('userInfo');
+            userInfo.innerHTML = `
+                <table style>
+                    <tr>
+                        <td>Name:</td>
+                        <td>${data.name}</td>
+                    </tr>
+                    <tr>
+                        <td>Picture:</td>
+                        <td><img src="${data.avatar_url}" alt="User Avatar" style="width: 100px; height: 100px;"></td>
+                    </tr>
+                    <tr>
+                        <td>Reoositories Count :- </td>
+                        <td>${data.public_repos}</td>
+                    </tr>
+                    <tr>
+                        <td>GitHub Id :- </td>
+                        <td>${data.id}</td>
+                    </tr>
+                    <tr>
+                        <td>Link to GitHub Profile :- </td>
+                        <td><a href=${data.html_url} style = "color:rgb(20, 112, 162);">Github</a></td>
+                    </tr>
+                    <tr>
+                        <td>Folowers Count:- </td>
+                        <td>${data.followers}</td>
+                    </tr>
+                </table>
+            `;
+            }
+        }
+        xhr.send()
+    }
+    document.getElementById('button').addEventListener('click',hit);
+
+    /*
+    -> XML request type in API calling is the old way before fetch to hit API calls
+    -> Now here new XMLHttpRequest is creating a refrence of new object and XML.open() is opening a request to the api
+    -> Where xhr.send() is sending the request
+    -> Now the two methods xhr.onreadystatechange (It take a function return value) and xhr.readyState are the 
+    methods to track the state of XML Request so that we can keep a check on the state 
+    -> Now , the state keep changing in time like 0-1 ,  1-2, 2-4
+    -> JavaScript Core does not includes even Console.log() , It is Dev Tool of browser
+    */
+</script>
+</html>
