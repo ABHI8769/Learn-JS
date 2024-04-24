@@ -42,6 +42,6 @@ Master the concepts of `call`, `apply`, and `bind`. Understand how to control th
 ## Mini Projects
 For hands-on practice and application of the concepts, check out the mini-projects in this repository. Each project focuses on a different concept, allowing you to apply what you've learned in a practical way.
 
-Explore the [JavaScript Mini Projects Repository](https://github.com/ABHI8769/JavaScript-Mini-Projects) for detailed instructions and code.
+Explore the [JavaScript Mini Projects Repository](https://github.com/ABHI8769/JavaScript-Mini-Projects) , [JavaScript Major Project Repsitory](Explore the [JavaScript Mini Project Repository](https://github.com/ABHI8769/JavaScript-Mini-Projects) for detailed instructions and code.) for detailed instructions and code.
 
 -By @Abhijeet Goswami | 2024 
