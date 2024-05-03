@@ -37,7 +37,7 @@ Promises provide a cleaner way to work with asynchronous code. Understand how to
 Learn how to work with APIs (Application Programming Interfaces). Understand how to fetch data from external sources and integrate it into your applications.
 
 ### Call, This, Bind
-Master the concepts of `call`, `apply`, and `bind`. Understand how to control the value of `this` in different contexts.
+Master the concepts of `call`, `this`, and `bind`. Understand how to control the value of `this` in different contexts.
 
 ## Mini Projects
 For hands-on practice and application of the concepts, check out the mini-projects in this repository. Each project focuses on a different concept, allowing you to apply what you've learned in a practical way.
